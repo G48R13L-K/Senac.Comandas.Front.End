@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #002349;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.logo {
+
+    width: 150px;
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #957C3D;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    text-justify: center;
+    width: 200px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.central {
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.Cardapio {
+    background-color: #C9A03F;
+    border-radius: 12px;
+    padding: 12px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.Pedidos {
+    background-color: #7A97CD;
+    border-radius: 12px;
+    padding: 12px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.Comanda {
+    background-color: #598D59;
+    border-radius: 12px;
+    padding: 12px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.Usuario {
+    background-color: #E25846;
+    border-radius: 12px;
+    padding: 12px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.Mesa {
+    background-color: #764191;
+    border-radius: 12px;
+    padding: 12px;
+    color: #fff;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 216%;
+}
+   .navegacao_links {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: #957C3D;
+    cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+    width: 10%;
+
+}
+.navegacao_links a {
+    text-decoration: none;
+    color: #957C3D;
+    font-size: 16px;
+}
+.btn_navegar {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #957C3D;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+        color: white;
+    
+}
+.btn_fecharnavegar{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #957C3D;
+    cursor: pointer;
+    color: white;
+}

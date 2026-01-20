@@ -1,0 +1,376 @@
+      * {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+          background-color: #002349;
+      }
+
+      .header-content {
+          display: flex;
+          align-items: row;
+          justify-content: center;
+          padding: 20px;
+      }
+
+      .logo {
+          width: 150px;
+          left: 20px;
+          position: absolute;
+      }
+
+      .title {
+          display: flex;
+          justify-content: center;
+          font-size: 40px;
+          color: #957C3D;
+          font-family: 'Arial', sans-serif;
+          margin-left: 20px;
+      }
+
+      main {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+      }
+
+      .Botoes {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgb(255, 255, 255);
+          border-color: #957C3D;
+          gap: 16px;
+          padding: 24px;
+      }
+
+      .Botoes .btn_novaMesa {
+          font-size: 24px;
+          border-radius: 8px;
+          padding: 8px 16px;
+          cursor: pointer;
+          color: white;
+          border: #957C3B 2px solid;
+      }
+
+      .Botoes .btn_novaMesa:hover {
+          background-color: #957C3D;
+          color: white;
+      }
+
+      .Botoes .btn_reservarMesa {
+          font-size: 24px;
+          border-radius: 8px;
+          padding: 8px 16px;
+          cursor: pointer;
+          color: white;
+          border: #957C3B 2px solid;
+      }
+
+      .Botoes .btn_reservarMesa:hover {
+          background-color: #957C3D;
+          color: white;
+      }
+
+      .contem ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+
+          gap: 16px;
+          padding: 24px;
+
+      }
+
+      .navegacao_links {
+
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          color: #ffffff;
+          cursor: pointer;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 10%;
+
+      }
+
+      .navegacao_links a {
+          text-decoration: none;
+          color: #957C3D;
+          font-size: 16px;
+      }
+
+      .btn_navegar {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 40px;
+          height: 40px;
+          border: #957C3D 2px solid;
+          border-radius: 50%;
+          cursor: pointer;
+          color: white;
+
+      }
+
+      .btn_navegar:hover {
+          background-color: #957C3D;
+          color: white;
+      }
+
+      .btn_fecharnavegar {
+          position: absolute;
+          right: 0;
+          top: 0px;
+          font-size: 24px;
+          background: none;
+          border: none;
+          color: #ffffff;
+          cursor: pointer;
+          color: white;
+      }
+
+      ul .lista {
+          border: 2px solid #957c3b;
+          border-radius: 8px;
+          padding: 16px;
+          display: flex;
+          flex-direction: row;
+          gap: 32px;
+          width: 100%;
+          max-width: 500px;
+          margin: 0 auto;
+          color: bisque;
+          justify-content: space-between;
+          align-items: flex-start;
+
+      }
+
+      ul .remove {
+          border: none;
+          border-radius: 8px;
+          padding: 8px 16px;
+          cursor: pointer;
+          color: white;
+          border: #957C3B 2px solid;
+      }
+
+      ul .remove:hover {
+          background-color: #957C3D;
+          color: white;
+      }
+
+      .btn_reservarMesa {
+          color: rgb(255, 255, 255);
+          border-color: #957C3D;
+          padding: 8px;
+      }
+
+      /* .ModalNavegacao{
+        position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    top: 0;
+    background: transparent;
+    z-index: 1;
+} */
+      .modal-conteudo-novamesa {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          background-color: #002349;
+          padding: 24px;
+          border: solid 2px #ffffff;
+          color: #957C3D;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+
+      }
+
+      .modal_fechar {
+          position: absolute;
+          right: 16px;
+          top: 8px;
+          font-size: 24px;
+          background: none;
+          border: none;
+          color: #f9f9f9;
+          cursor: pointer;
+      }
+
+      #numero_mesa {
+          padding: 8px;
+          border-radius: 4px;
+          border: #ffffff solid 1px;
+          color: #ffffff;
+      }
+
+      .modal_criar_mesa {
+          padding: 8px;
+          border-radius: 4px;
+          border: #e8e8e8 solid 1px;
+          background-color: transparent;
+          color: #ffffff;
+          cursor: pointer;
+      }
+
+      .modal {
+          display: flex;
+          position: fixed;
+
+          border: solid 2px #ffffff;
+          color: #ffffff;
+      }
+
+      .modal-conteudo-reserva {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          justify-content: center;
+          gap: 16px;
+          background-color: #002349;
+          padding: 24px;
+          border: solid 2px #ffffff;
+          color: #ffffff;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+      }
+
+      .modal_fechar {
+          position: absolute;
+          right: 16px;
+          top: 8px;
+          font-size: 24px;
+          background: none;
+          border: none;
+          color: #f9f9f9;
+          cursor: pointer;
+      }
+
+      #nome_reserva {
+          padding: 8px;
+          border-radius: 4px;
+          border: #ffffff solid 1px;
+          color: #ffffff;
+      }
+
+      #slectmesa {
+          padding: 8px;
+          border-radius: 4px;
+          border: #ffffff solid 1px;
+          color: #ffffff;
+      }
+
+      #numero_telefone_reserva {
+          padding: 8px;
+          border-radius: 4px;
+          border: #ffffff solid 1px;
+          color: #ffffff;
+      }
+
+      .modal_reservar_mesa {
+          padding: 8px;
+          border-radius: 4px;
+          border: #e8e8e8 solid 1px;
+          background-color: transparent;
+          color: #ffffff;
+          cursor: pointer;
+      }
+
+      .modal_reservar_mesa:hover {
+          background-color: #957C3D;
+          border: #957C3D solid 1px;
+      }
+
+      /* Fundo escuro do modal */
+      .modal {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.76);
+          /* fundo escuro */
+          display: none;
+          justify-content: center;
+          align-items: center;
+          z-index: 999;
+      }
+
+      /* Caixa do modal */
+      .modal-conteudo-novamesa,
+      .modal-conteudo-reserva {
+          width: 420px;
+          background-color: #002349;
+          /* padrão do seu layout */
+          padding: 25px;
+          border-radius: 12px;
+          border: 2px solid #d1b06a;
+          color: #d1b06a;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          box-shadow: #d1b06a 0px 0px 10px;
+      }
+
+      /* Título */
+      .modal-conteudo-novamesa h2,
+      .modal-conteudo-reserva h2 {
+          margin: 0;
+          color: #d1b06a;
+          text-align: center;
+      }
+
+      /* Ícone de fechar */
+      .modal_fechar {
+          font-size: 28px;
+          cursor: pointer;
+          color: #d1b06a;
+          align-self: flex-end;
+          transition: 0.3s;
+      }
+
+      .modal_fechar:hover {
+          color: #fff;
+      }
+
+      /* Inputs e Select */
+      .modal input,
+      .modal select {
+          padding: 10px;
+          font-size: 18px;
+          border-radius: 6px;
+          border: 2px solid #d1b06a;
+          background-color: #002349;
+          color: #fff;
+      }
+
+      /* Botões */
+      .modal button {
+          padding: 12px;
+          background-color: transparent;
+          border: 2px solid #d1b06a;
+          border-radius: 10px;
+          font-size: 18px;
+          color: #d1b06a;
+          cursor: pointer;
+          transition: 0.3s;
+      }
+
+      .modal button:hover {
+          background-color: #d1b06a;
+          color: #002349;
+      }
